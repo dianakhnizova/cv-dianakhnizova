@@ -23,6 +23,7 @@ export default tseslint
         ".DS_Store",
         "coverage/",
         "tests",
+        'vite.config.ts'
       ],
     },
     {
