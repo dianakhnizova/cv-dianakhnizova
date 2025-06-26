@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +23,7 @@ a:active {
 }
 
 :root {
+  --ff-base: "Poppins", sans-serif;
   --clr-test: #0f0;
   --clr-disabled-100: #cacaca;
   --clr-disabled-300: #a0a0a0;
@@ -36,7 +39,9 @@ a:active {
 
 html,
 body {
-  background-color: var(--clr-bg-1);
+  font-family: var(--ff-base);
+  color: var(--clr-bg-1);
+  background-color: var(--clr-line);
   min-height: 100vh;
 }
 

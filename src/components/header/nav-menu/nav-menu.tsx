@@ -1,3 +1,5 @@
+import { Button } from "@/components/button/button";
+import { messages } from "./messages";
 import { navMenuItemList } from "./nav-menu-items/nav-menu-item-list";
 import styles from "./nav-menu.module.css";
 import { NavLink } from "react-router-dom";
@@ -23,6 +25,7 @@ export const NavMenu = () => {
           </NavLink>
         );
       })}
+      <Button className={styles.button}>{messages.portfolioButton}</Button>
     </ul>
   );
 };

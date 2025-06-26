@@ -1,3 +1,40 @@
 .container {
+  width: 90%;
+  align-items: center;
+}
+
+.homeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
   width: 100%;
+  height: 716px;
+}
+
+.titleContainer {
+  position: absolute;
+  top: 531px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleProf {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.titleName {
+  font-size: 54px;
+  line-height: 59.4px;
+}
+
+.titleDescription {
+  font-size: 14px;
+  line-height: 20px;
 }
