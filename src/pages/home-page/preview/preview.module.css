@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 113px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 42px;
+  width: 100%;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.descriptionTitle {
+  font-size: 23px;
+  font-weight: 100;
+  line-height: 30px;
+  text-align: center;
+}
+
+.previewContainer {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+}
+
+.projectContainer {
+  width: 50%;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.gitContainer {
+  background-image: url("../../../assets/IMAGE1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.deployContainer {
+  background-image: url("../../../assets/IMAGE2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.projectTitle {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.previewButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+}

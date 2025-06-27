@@ -1,13 +1,9 @@
 .container {
-  width: 90%;
-  align-items: center;
-}
-
-.homeWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .image {
@@ -16,16 +12,17 @@
 }
 
 .titleContainer {
-  position: absolute;
-  top: 531px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin-top: -240px;
 }
 
 .titleProf {
   font-size: 14px;
+  font-weight: 200;
   letter-spacing: 2px;
 }
 
@@ -36,5 +33,7 @@
 
 .titleDescription {
   font-size: 14px;
+  font-weight: 200;
   line-height: 20px;
+  margin-top: 18px;
 }
