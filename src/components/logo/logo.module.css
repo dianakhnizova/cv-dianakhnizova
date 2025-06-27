@@ -1,0 +1,16 @@
+.logoContainer {
+  width: 200px;
+  height: 200px;
+}
+
+.logo {
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (width <= 600px) {
+  .logoContainer {
+    width: 100px;
+    height: 100px;
+  }
+}
