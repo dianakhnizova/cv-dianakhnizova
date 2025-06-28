@@ -6,9 +6,9 @@
   font-family: var(--ff-base);
   font-size: 16px;
   font-weight: 400;
-  border-radius: 16px;
-  width: 155px;
-  height: 42px;
+  border-radius: 10px;
+  padding: 5px 25px;
+  align-items: center;
 
   &.primary {
     background-color: var(--clr-bg-1);

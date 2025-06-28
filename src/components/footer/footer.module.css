@@ -14,11 +14,35 @@
 }
 
 .container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 80px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  pointer-events: none;
+}
+
+.footer:hover .container {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.bottomContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 0 80px;
+  padding: 20px 100px 0;
 }
 
 .bottomTitle {
@@ -26,8 +50,13 @@
 }
 
 @media (width <= 600px) {
-  .container {
+  .bottomContainer {
     flex-direction: column;
-    gap: 60px;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .bottomTitle {
+    font-size: 14px;
   }
 }

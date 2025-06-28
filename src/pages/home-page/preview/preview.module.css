@@ -64,9 +64,9 @@
 
 .previewButton {
   display: flex;
-  align-items: center;
   gap: 6px;
-  padding: 8px;
+  padding: 5px;
+  width: 180px;
 }
 
 @media (width <= 600px) {
@@ -77,5 +77,9 @@
 
   .projectContainer {
     width: 90%;
+  }
+
+  .previewButton {
+    width: 120px;
   }
 }
