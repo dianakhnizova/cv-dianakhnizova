@@ -1,17 +1,17 @@
 import { Wrapper } from "@/components/wrapper/wrapper";
-import ImageBackground from "@/assets/IMAGE.png";
 import styles from "./home-page.module.css";
-import { Preview } from "./preview/preview";
-import { Contacts } from "./contacts/contacts";
-import { MainTitle } from "./main-title/main-title";
+import { Preview } from "./components/preview/preview";
+import { Contacts } from "./components/contacts/contacts";
+import { MainTitle } from "./components/main-title/main-title";
+import { useScroll } from "@/utils/hooks/use-scroll";
 
 export const HomePage = () => {
+  const { isScrolled } = useScroll();
+
   return (
     <div className={styles.container}>
-      <img src={ImageBackground} alt="home-page" className={styles.image} />
-
       <Wrapper className={styles.homeWrapper}>
-        <MainTitle />
+        <MainTitle isScrolled={isScrolled} />
         <Preview />
         <Contacts />
       </Wrapper>

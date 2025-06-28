@@ -27,6 +27,8 @@
     opacity 0.3s ease,
     transform 0.3s ease;
   pointer-events: none;
+  border-top: 1px solid var(--clr-bg-1);
+  border-radius: 20px;
 }
 
 .footer:hover .container {
@@ -48,6 +50,7 @@
 
 .bottomTitle {
   text-align: center;
+  font-size: 10px;
 }
 
 @media (width <= 600px) {
@@ -55,9 +58,5 @@
     flex-direction: column;
     gap: 20px;
     padding: 10px;
-  }
-
-  .bottomTitle {
-    font-size: 14px;
   }
 }
