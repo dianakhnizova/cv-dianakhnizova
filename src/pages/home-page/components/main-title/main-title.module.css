@@ -1,5 +1,8 @@
 .container {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../../../../assets//IMAGE.png");
   background-size: cover;
   background-position: center;
@@ -14,7 +17,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 240px 0 0;
+  padding: 220px 0 0;
+  width: 70%;
 }
 
 .titleProf {
@@ -24,15 +28,16 @@
 }
 
 .titleName {
-  font-size: 54px;
+  font-size: 48px;
   line-height: 59.4px;
 }
 
 .titleDescription {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 200;
   line-height: 20px;
   margin-top: 18px;
+  text-align: center;
 }
 
 .shrink {

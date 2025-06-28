@@ -4,6 +4,8 @@ import { Preview } from "./components/preview/preview";
 import { Contacts } from "./components/contacts/contacts";
 import { MainTitle } from "./components/main-title/main-title";
 import { useScroll } from "@/utils/hooks/use-scroll";
+import { RandomProject } from "@/components/random-projects/random-projects";
+import { TechStack } from "./components/tech-stack/tech-stack";
 
 export const HomePage = () => {
   const { isScrolled } = useScroll();
@@ -12,8 +14,10 @@ export const HomePage = () => {
     <div className={styles.container}>
       <Wrapper className={styles.homeWrapper}>
         <MainTitle isScrolled={isScrolled} />
-        <Preview />
-        <Contacts />
+        <Preview isScrolled={isScrolled} />
+        <Contacts isScrolled={isScrolled} />
+        <RandomProject />
+        <TechStack />
       </Wrapper>
     </div>
   );

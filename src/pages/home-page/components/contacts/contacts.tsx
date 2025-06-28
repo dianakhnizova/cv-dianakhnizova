@@ -3,10 +3,20 @@ import styles from "./contacts.module.css";
 import { messages } from "./messages";
 import FrameIcon from "@/assets/Frame.png";
 import MyPhoto from "@/assets/myPhoto1.png";
+import classNames from "classnames";
 
-export const Contacts = () => {
+interface Props {
+  isScrolled: boolean;
+}
+
+export const Contacts = ({ isScrolled }: Props) => {
   return (
-    <div className={styles.container}>
+    <div
+      className={classNames(
+        styles.container,
+        isScrolled ? styles.shrinkContact : "",
+      )}
+    >
       <div className={styles.contactContainer}>
         <p className={styles.title}>{messages.contactTitle}</p>
         <p className={styles.description}>{messages.descriptionTitle}</p>

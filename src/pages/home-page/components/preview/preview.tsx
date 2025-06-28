@@ -4,9 +4,15 @@ import classNames from "classnames";
 import { Button } from "@/components/button/button";
 import FrameIcon from "@/assets/Frame.png";
 
-export const Preview = () => {
+interface Props {
+  isScrolled: boolean;
+}
+
+export const Preview = ({ isScrolled }: Props) => {
   return (
-    <div className={styles.container}>
+    <div
+      className={classNames(styles.container, isScrolled ? styles.shrink : "")}
+    >
       <div className={styles.titleContainer}>
         <p className={styles.title}>{messages.mainTitle}</p>
         <p className={styles.descriptionTitle}>{messages.descriptionTitle}</p>
