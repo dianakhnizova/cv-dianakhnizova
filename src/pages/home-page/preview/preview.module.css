@@ -36,11 +36,10 @@
 
 .projectContainer {
   width: 50%;
-  height: 740px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 30px;
+  padding: 220px 30px 30px;
 }
 
 .gitContainer {

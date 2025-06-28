@@ -15,8 +15,9 @@ export const Contacts = () => {
           {messages.contactButton}
         </Button>
       </div>
-
-      <img src={MyPhoto} alt="MyPhoto" className={styles.image} />
+      <div className={styles.imageContainer}>
+        <img src={MyPhoto} alt="MyPhoto" className={styles.image} />
+      </div>
     </div>
   );
 };

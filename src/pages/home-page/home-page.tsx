@@ -1,9 +1,9 @@
 import { Wrapper } from "@/components/wrapper/wrapper";
 import ImageBackground from "@/assets/IMAGE.png";
 import styles from "./home-page.module.css";
-import { messages } from "./messages";
 import { Preview } from "./preview/preview";
 import { Contacts } from "./contacts/contacts";
+import { MainTitle } from "./main-title/main-title";
 
 export const HomePage = () => {
   return (
@@ -11,11 +11,7 @@ export const HomePage = () => {
       <img src={ImageBackground} alt="home-page" className={styles.image} />
 
       <Wrapper className={styles.homeWrapper}>
-        <div className={styles.titleContainer}>
-          <p className={styles.titleProf}>{messages.titleProfession}</p>
-          <p className={styles.titleName}>{messages.titleName}</p>
-          <p className={styles.titleDescription}>{messages.titleDescription}</p>
-        </div>
+        <MainTitle />
         <Preview />
         <Contacts />
       </Wrapper>

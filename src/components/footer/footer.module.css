@@ -3,6 +3,7 @@
   bottom: 0;
   z-index: 100;
   background-color: var(--clr-line);
+  padding-bottom: 20px;
 }
 
 .footerWrapper {
@@ -17,8 +18,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 40px;
-  padding: 20px 80px;
+  padding: 0 80px;
 }
 
 .bottomTitle {

@@ -1,0 +1,45 @@
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -240px;
+}
+
+.titleProf {
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.titleName {
+  font-size: 54px;
+  line-height: 59.4px;
+}
+
+.titleDescription {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 20px;
+  margin-top: 18px;
+}
+
+@media (width <= 600px) {
+  .titleContainer {
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  .titleProf {
+    font-size: 10px;
+  }
+
+  .titleName {
+    font-size: 30px;
+  }
+
+  .titleDescription {
+    margin-top: 4px;
+  }
+}
