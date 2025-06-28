@@ -2,13 +2,15 @@
   background-color: var(--clr-accent-1);
   color: var(--clr-line);
   cursor: pointer;
-  transition: 0.2s;
+  box-shadow: 0 0 0 1px transparent;
+  transition: all 0.2s ease;
   font-family: var(--ff-base);
   font-size: 16px;
   font-weight: 400;
   border-radius: 10px;
   padding: 5px 25px;
   align-items: center;
+  border: 0.5px solid transparent;
 
   &.primary {
     background-color: var(--clr-bg-1);
@@ -19,7 +21,10 @@
   }
 
   &:hover {
-    opacity: 0.5;
+    background-color: var(--clr-line);
+    color: var(--clr-bg-1);
+    border: 0.5px solid var(--clr-bg-1);
+    box-shadow: 0 0 0 1px var(--clr-bg-1);
   }
 
   &:disabled {

@@ -30,6 +30,5 @@
 }
 
 .menuItem:hover {
-  color: var(--clr-test);
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
