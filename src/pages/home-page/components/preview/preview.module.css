@@ -38,7 +38,7 @@
 .titleContainer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
