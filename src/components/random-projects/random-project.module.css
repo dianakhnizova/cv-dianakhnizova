@@ -1,16 +1,9 @@
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 90%;
   gap: 20px;
-  padding: 40px 0 0;
-}
-
-@media (width <= 600px) {
-  .container {
-    width: 90%;
-    flex-wrap: wrap;
-    padding: 0;
-  }
+  padding: 40px 0;
 }
