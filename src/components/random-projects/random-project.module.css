@@ -2,7 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  height: 200px;
-  border: 2px solid var(--clr-bg-1);
+  width: 70%;
+  gap: 20px;
+  padding: 40px 0 0;
+}
+
+@media (width <= 600px) {
+  .container {
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }

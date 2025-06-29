@@ -3,6 +3,7 @@ import { PagePath } from "./enums";
 import { Root } from "./root/root";
 import { HomePage } from "../pages/home-page/home-page";
 import { NotFoundPage } from "../pages/not-found-page/not-found-page";
+import { DeploysPage } from "@/pages/deploys-page/deploys-page";
 
 export const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, Component: HomePage },
       { path: PagePath.notFound, Component: NotFoundPage },
+      { path: PagePath.deploysPage, Component: DeploysPage },
     ],
   },
   {
