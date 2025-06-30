@@ -7,10 +7,11 @@ import { useNavigate } from "react-router-dom";
 import { PagePath } from "@/router/enums";
 
 interface Props {
+  isLowHeight: boolean;
   isScrolled: boolean;
 }
 
-export const Preview = ({ isScrolled }: Props) => {
+export const Preview = ({ isLowHeight, isScrolled }: Props) => {
   const navigate = useNavigate();
 
   const toDeploysPage = () => {
@@ -19,7 +20,10 @@ export const Preview = ({ isScrolled }: Props) => {
 
   return (
     <div
-      className={classNames(styles.container, isScrolled ? styles.shrink : "")}
+      className={classNames(
+        styles.container,
+        isScrolled ? styles.shrink : isLowHeight ? styles.viewHeight : "",
+      )}
     >
       <div className={styles.titleContainer}>
         <p className={styles.title}>{messages.mainTitle}</p>

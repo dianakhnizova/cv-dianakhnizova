@@ -3,13 +3,17 @@ import styles from "./main-title.module.css";
 import { messages } from "./messages";
 
 interface Props {
+  isLowHeight: boolean;
   isScrolled: boolean;
 }
 
-export const MainTitle = ({ isScrolled }: Props) => {
+export const MainTitle = ({ isLowHeight, isScrolled }: Props) => {
   return (
     <div
-      className={classNames(styles.container, isScrolled ? styles.shrink : "")}
+      className={classNames(
+        styles.container,
+        isScrolled ? styles.shrink : isLowHeight ? styles.viewHeight : "",
+      )}
     >
       <div className={styles.titleContainer}>
         <p className={styles.titleProf}>{messages.titleProfession}</p>

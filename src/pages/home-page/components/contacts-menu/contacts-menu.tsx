@@ -1,20 +1,21 @@
 import { Button } from "@/components/button/button";
-import styles from "./contacts.module.css";
+import styles from "./contacts-menu.module.css";
 import { messages } from "./messages";
 import FrameIcon from "@/assets/Frame.png";
 import MyPhoto from "@/assets/myPhoto1.png";
 import classNames from "classnames";
 
 interface Props {
+  isLowHeight: boolean;
   isScrolled: boolean;
 }
 
-export const Contacts = ({ isScrolled }: Props) => {
+export const ContactsMenu = ({ isLowHeight, isScrolled }: Props) => {
   return (
     <div
       className={classNames(
         styles.container,
-        isScrolled ? styles.shrinkContact : "",
+        isScrolled ? styles.shrink : isLowHeight ? styles.viewHeight : "",
       )}
     >
       <div className={styles.contactContainer}>

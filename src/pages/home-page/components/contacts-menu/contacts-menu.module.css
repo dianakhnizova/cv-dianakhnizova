@@ -7,10 +7,6 @@
   transition: transform 0.8s ease;
 }
 
-.shrinkContact {
-  display: flex;
-}
-
 .contactContainer {
   display: flex;
   flex-direction: column;
@@ -53,6 +49,12 @@
 
 .shrink {
   width: 500px;
+}
+
+.viewHeight {
+  .shrink {
+    width: 500px;
+  }
 }
 
 @media (width <= 600px) {
