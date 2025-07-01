@@ -8,6 +8,7 @@ import { TechStack } from "./components/tech-stack/tech-stack";
 import { useViewport } from "@/utils/hooks/use-viewport";
 import { useScroll } from "@/utils/hooks/use-scroll";
 import { Contacts } from "@/components/contacts/contacts";
+import { Skills } from "./components/skills/skills";
 
 export const HomePage = () => {
   const { isLowHeight } = useViewport();
@@ -20,6 +21,7 @@ export const HomePage = () => {
         <Preview isLowHeight={isLowHeight} isScrolled={isScrolled} />
         <ContactsMenu isLowHeight={isLowHeight} isScrolled={isScrolled} />
         <RandomProject isScrolled={isScrolled} />
+        <Skills />
         <TechStack />
         <Contacts />
       </Wrapper>

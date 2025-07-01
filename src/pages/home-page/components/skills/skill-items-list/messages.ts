@@ -1,0 +1,25 @@
+export const messages = {
+  labelCoreTech: "Core Technologies",
+  labelFrameworks: "Frameworks & Libraries",
+  labelTooling: "Tooling",
+  labelApi: "API & Integration",
+  labelDesign: "Design Collaboration",
+
+  skillsLabels: {
+    skillJs: "Java Script",
+    skillTs: "Type Script",
+    skillHTML: "HTML5",
+    skillCss: "CSS",
+    skillDOM: "DOM Api",
+    skillReact: "React",
+    skillState: "State management: MobX",
+    skillWebPack: "WebPack",
+    skillVite: "Vite",
+    skillGit: "Git, GitHub ",
+    skillRestApi: "REST API",
+    skillWebSocket: "WebSockets",
+    skillNetlify: "Netlify",
+    skillFigma: "Figma",
+    skillPixelPerfect: "Pixel-perfect implementation",
+  },
+};

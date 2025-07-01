@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+  padding: 60px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 80px;
+  width: 40%;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+@media (width <= 600px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .titleContainer {
+    width: 90%;
+    padding: 20px;
+  }
+}
