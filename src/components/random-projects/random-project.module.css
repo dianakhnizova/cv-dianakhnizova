@@ -5,7 +5,7 @@
   align-items: center;
   width: 90%;
   gap: 20px;
-  padding: 20px 0;
+  padding: 20px 0 40px;
   border: 1px solid var(--clr-bg-1);
   border-radius: 15px;
 }

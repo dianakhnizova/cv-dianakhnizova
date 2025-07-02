@@ -6,3 +6,8 @@ export type LinkItems = {
   label: string;
   onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 };
+
+export type MyData = {
+  label: string;
+  data: string;
+};

@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 8px;
+  padding: 8px 40px 8px 10px;
 }
 
 .imageContainer {
@@ -48,7 +48,7 @@
 }
 
 .shrink {
-  width: 500px;
+  display: flex;
 }
 
 .viewHeight {

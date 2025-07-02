@@ -1,5 +1,5 @@
 import styles from "./skill-item.module.css";
-import { skillItemsList } from "../../skill-items-list/skill-items-list";
+import { skillItemsList } from "./skill-items-list/skill-items-list";
 
 export const SkillItem = () => {
   return (

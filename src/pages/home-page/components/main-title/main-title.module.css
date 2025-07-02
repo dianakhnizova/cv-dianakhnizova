@@ -10,6 +10,7 @@
   transition:
     opacity 0.8s ease,
     transform 0.8s ease;
+  margin-bottom: 40px;
 }
 
 .titleContainer {
@@ -32,14 +33,6 @@
   line-height: 59.4px;
 }
 
-.titleDescription {
-  font-size: 12px;
-  font-weight: 200;
-  line-height: 20px;
-  margin-top: 18px;
-  text-align: center;
-}
-
 .shrink {
   opacity: 0;
   transform: scale(0.9) translateY(-20px);
@@ -59,9 +52,5 @@
 
   .titleName {
     font-size: 30px;
-  }
-
-  .titleDescription {
-    margin-top: 4px;
   }
 }
