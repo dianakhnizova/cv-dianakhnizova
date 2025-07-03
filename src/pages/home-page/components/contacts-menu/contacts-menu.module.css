@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  width: 90%;
   display: none;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,6 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 40px 8px 10px;
 }
 
 .imageContainer {

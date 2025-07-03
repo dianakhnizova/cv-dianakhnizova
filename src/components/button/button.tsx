@@ -4,11 +4,13 @@ import { ButtonVariants } from "./enums";
 
 type Props = {
   variant?: ButtonVariants;
+  isActive?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button: React.FC<Props> = ({
   variant = ButtonVariants.primary,
   className,
+  isActive,
   ...rest
 }) => {
   const primaryClass = styles.primary;
@@ -18,7 +20,14 @@ export const Button: React.FC<Props> = ({
     variant === ButtonVariants.primary ? primaryClass : secondaryClass;
   return (
     <button
-      className={ClassNames(styles.button, buttonClass, className)}
+      className={ClassNames(
+        styles.button,
+        buttonClass,
+        {
+          [styles.active]: isActive,
+        },
+        className,
+      )}
       {...rest}
     />
   );

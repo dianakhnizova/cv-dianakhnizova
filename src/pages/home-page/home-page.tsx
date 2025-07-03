@@ -3,8 +3,6 @@ import styles from "./home-page.module.css";
 import { Preview } from "./components/preview/preview";
 import { ContactsMenu } from "./components/contacts-menu/contacts-menu";
 import { MainTitle } from "./components/main-title/main-title";
-import { RandomProject } from "@/components/random-projects/random-projects";
-import { TechStack } from "./components/tech-stack/tech-stack";
 import { useViewport } from "@/utils/hooks/use-viewport";
 import { useScroll } from "@/utils/hooks/use-scroll";
 import { Contacts } from "@/components/contacts/contacts";
@@ -12,6 +10,7 @@ import { Skills } from "./components/skills/skills";
 import type { JSX } from "react";
 import { useState } from "react";
 import { AboutMe } from "./components/about-me/about-me";
+import { StackMenu } from "./components/ stack-menu/stack-menu";
 
 export const HomePage = () => {
   const { isLowHeight } = useViewport();
@@ -39,7 +38,6 @@ export const HomePage = () => {
         <MainTitle isLowHeight={isLowHeight} isScrolled={isScrolled} />
         <AboutMe />
         <Preview isLowHeight={isLowHeight} isScrolled={isScrolled} />
-        <RandomProject isScrolled={isScrolled} />
         <ContactsMenu
           isScrolled={isScrolled}
           isContent={contactsContent}
@@ -47,7 +45,7 @@ export const HomePage = () => {
         />
         {contactsContent}
         <Skills />
-        <TechStack />
+        <StackMenu />
       </Wrapper>
     </div>
   );
