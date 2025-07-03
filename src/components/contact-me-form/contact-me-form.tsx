@@ -3,62 +3,69 @@ import { Button } from "../button/button";
 import styles from "./contact-me-form.module.css";
 import { messages } from "./messages";
 import FrameIcon from "@/assets/Frame.png";
-import { validationInput } from "./validation-input";
+import { sendToTelegram } from "./send-to-telegram";
+import { NameInput } from "./components/name-input/name-input";
+import { TelegramInput } from "./components/telegram-input/telegram-input";
+import { ReasonSelect } from "./components/reason-select/reason-select";
 
 export const ContactMeForm = () => {
   const [name, setName] = useState("");
+  const [errorName, setErrorName] = useState("");
+  const [telegram, setTelegram] = useState("");
+  const [errorTelegram, setErrorTelegram] = useState("");
   const [reason, setReason] = useState("help");
-  const [error, setError] = useState("");
+  const [submitMessage, setSubmitMessage] = useState("");
 
-  const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const inputValue = event.target.value;
-    setName(inputValue);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-    const error = validationInput(inputValue);
-    setError(error);
-  };
+    try {
+      await sendToTelegram(name, telegram, reason);
 
-  const handleReasonChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setReason(event.target.value);
+      setSubmitMessage(messages.sendOk);
+      setTimeout(() => {
+        setSubmitMessage("");
+      }, 3000);
+
+      setName("");
+      setTelegram("");
+      setReason("help");
+      setErrorName("");
+      setErrorTelegram("");
+    } catch {
+      setSubmitMessage(messages.sendError);
+    }
   };
 
   return (
     <div className={styles.container}>
       <h3 className={styles.mainTitle}>{messages.contactMeTitle}</h3>
-      <form className={styles.form}>
-        <label htmlFor="name" className={styles.label}>
-          {messages.labelName}
-        </label>
-        <input
-          id="name"
-          type="text"
-          value={name}
-          onChange={handleNameChange}
-          placeholder={messages.inputPlaceholder}
-          className={!error ? styles.input : styles.errorInput}
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <NameInput
+          name={name}
+          setName={setName}
+          error={errorName}
+          setError={setErrorName}
         />
-        {error && <p className={styles.errorContainer}>{error}</p>}
+        <TelegramInput
+          telegram={telegram}
+          setTelegram={setTelegram}
+          error={errorTelegram}
+          setError={setErrorTelegram}
+        />
+        <ReasonSelect reason={reason} setReason={setReason} />
 
-        <label htmlFor="reason" className={styles.label}>
-          {messages.labelReason}
-        </label>
-        <select
-          id="reason"
-          value={reason}
-          onChange={handleReasonChange}
-          className={styles.select}
+        <Button
+          disabled={!!errorName || !!errorTelegram}
+          type="submit"
+          className={styles.sendButton}
         >
-          <option value="" disabled hidden>
-            Select reason
-          </option>
-          <option value="help">{messages.labelHelp}</option>
-          <option value="suggest">{messages.labelInvite}</option>
-        </select>
-
-        <Button disabled={!!error} className={styles.sendButton}>
           <img src={FrameIcon} alt="frame-button" />
           {messages.sendButton}
         </Button>
+        {submitMessage && (
+          <p className={styles.errorContainer}>{submitMessage}</p>
+        )}
       </form>
     </div>
   );

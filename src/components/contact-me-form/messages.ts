@@ -1,9 +1,6 @@
 export const messages = {
-  contactMeTitle: "Contact me",
-  labelName: "Your name",
-  labelReason: "Reason for contact",
-  labelHelp: "Help with the website",
-  labelInvite: "Invite to Interview ",
-  inputPlaceholder: "Enter your name",
+  contactMeTitle: "Contact via Telegram Bot",
   sendButton: "Send",
+  sendOk: "Message sent to Telegram!",
+  sendError: "Error sending message.",
 };
