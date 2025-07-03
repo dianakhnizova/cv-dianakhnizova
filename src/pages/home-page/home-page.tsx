@@ -5,17 +5,17 @@ import { ContactsMenu } from "./components/contacts-menu/contacts-menu";
 import { MainTitle } from "./components/main-title/main-title";
 import { useViewport } from "@/utils/hooks/use-viewport";
 import { useScroll } from "@/utils/hooks/use-scroll";
-import { Contacts } from "@/components/contacts/contacts";
 import { Skills } from "./components/skills/skills";
 import type { JSX } from "react";
 import { useState } from "react";
 import { AboutMe } from "./components/about-me/about-me";
 import { StackMenu } from "./components/ stack-menu/stack-menu";
+import { ContactMeForm } from "@/components/contact-me-form/contact-me-form";
 
 export const HomePage = () => {
   const { isLowHeight } = useViewport();
   const { isScrolled } = useScroll();
-  const contactsBlock = <Contacts />;
+  const contactsBlock = <ContactMeForm />;
 
   const [contactsContent, setContactsContent] = useState<JSX.Element | null>(
     null,
@@ -24,9 +24,6 @@ export const HomePage = () => {
   const handleContactClick = () => {
     if (!contactsContent) {
       setContactsContent(contactsBlock);
-      setTimeout(() => {
-        setContactsContent(null);
-      }, 8000);
     } else {
       setContactsContent(null);
     }

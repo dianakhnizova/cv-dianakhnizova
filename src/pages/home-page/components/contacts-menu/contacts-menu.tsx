@@ -22,7 +22,7 @@ export const ContactsMenu = ({ isScrolled, isContent, onClick }: Props) => {
         <p className={styles.description}>{messages.descriptionTitle}</p>
         <Button onClick={onClick} className={styles.contactButton}>
           <img src={FrameIcon} alt="frame-button" />
-          {!isContent ? messages.contactButton : messages.closeButton}
+          {!isContent ? messages.contactMeButton : messages.closeButton}
         </Button>
       </div>
       <div className={styles.imageContainer}>
