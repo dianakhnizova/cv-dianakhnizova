@@ -24,6 +24,8 @@ a:active {
 
 :root {
   --ff-base: "Poppins", sans-serif;
+  --clr-bg-button: #fff;
+  --clr-line-button: #fff;
   --clr-hover: #63534e;
   --clr-active: #ffd700;
   --clr-disabled-100: #cacaca;
@@ -37,6 +39,22 @@ a:active {
   --shadow-1: 0 10px 40px rgb(0 0 0 / 5%), 0 -10px 40px rgb(0 0 0 / 5%);
   --shadow-2: 0px 5px 15.2px 0px #00000021;
   --shadow-3: 0 12px 24px rgb(0 0 0 / 20%);
+}
+
+:root.dark {
+  --clr-bg-1: #fff;
+  --clr-line: #000;
+  --clr-active: #ffd700;
+  --clr-bg-button: #fff;
+  --clr-line-button: #000;
+}
+
+:root.light {
+  --clr-bg-1: #000;
+  --clr-line: #fff;
+  --clr-active: #b4a715;
+  --clr-bg-button: #fff;
+  --clr-line-button: #000;
 }
 
 html,
