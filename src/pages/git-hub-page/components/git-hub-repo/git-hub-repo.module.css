@@ -13,3 +13,9 @@
   text-decoration: none;
   color: var(--clr-bg-1);
 }
+
+@media (width <= 600px) {
+  .repoList {
+    width: 100%;
+  }
+}

@@ -56,7 +56,7 @@ export const ContactMeForm = () => {
         <ReasonSelect reason={reason} setReason={setReason} />
 
         <Button
-          disabled={!!errorName || !!errorTelegram}
+          disabled={!!errorName || !!errorTelegram || !(name && telegram)}
           type="submit"
           className={styles.sendButton}
         >
