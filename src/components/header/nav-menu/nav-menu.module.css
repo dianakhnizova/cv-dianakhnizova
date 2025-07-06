@@ -10,7 +10,7 @@
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-bg-1);
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .selectedLink {

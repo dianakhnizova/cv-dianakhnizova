@@ -1,17 +1,6 @@
 .container {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 40px;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  padding: 0;
-}
-
-.logoImage {
-  width: 20px;
-  height: 20px;
 }

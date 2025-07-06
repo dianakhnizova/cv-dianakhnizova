@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "../button/button";
 import styles from "./contact-me-form.module.css";
 import { messages } from "./messages";
-import FrameIcon from "@/assets/Frame.png";
 import { sendToTelegram } from "../../api/send-to-telegram";
 import { NameInput } from "./components/name-input/name-input";
 import { TelegramInput } from "./components/telegram-input/telegram-input";
@@ -60,7 +59,6 @@ export const ContactMeForm = () => {
           type="submit"
           className={styles.sendButton}
         >
-          <img src={FrameIcon} alt="frame-button" />
           {messages.sendButton}
         </Button>
         {submitMessage && (

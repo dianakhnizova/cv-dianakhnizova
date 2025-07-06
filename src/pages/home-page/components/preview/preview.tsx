@@ -2,7 +2,6 @@ import styles from "./preview.module.css";
 import { messages } from "./messages";
 import classNames from "classnames";
 import { Button } from "@/components/button/button";
-import FrameIcon from "@/assets/Frame.png";
 import { useNavigate } from "react-router-dom";
 import { PagePath } from "@/router/enums";
 
@@ -38,10 +37,7 @@ export const Preview = ({ isLowHeight, isScrolled }: Props) => {
           className={classNames(styles.projectContainer, styles.gitContainer)}
         >
           <p className={styles.projectTitle}>{messages.projectGitHubTitle}</p>
-          <Button onClick={toGitHubPage} className={styles.previewButton}>
-            <img src={FrameIcon} alt="frame-button" />
-            {messages.buttonTitle}
-          </Button>
+          <Button onClick={toGitHubPage}>{messages.buttonTitle}</Button>
         </div>
         <div
           className={classNames(
@@ -50,10 +46,7 @@ export const Preview = ({ isLowHeight, isScrolled }: Props) => {
           )}
         >
           <p className={styles.projectTitle}>{messages.deploysTitle}</p>
-          <Button onClick={toDeploysPage} className={styles.previewButton}>
-            <img src={FrameIcon} alt="frame-button" />
-            {messages.buttonTitle}
-          </Button>
+          <Button onClick={toDeploysPage}>{messages.buttonTitle}</Button>
         </div>
       </div>
     </div>

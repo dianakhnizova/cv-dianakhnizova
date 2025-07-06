@@ -3,6 +3,7 @@
   align-items: flex-start;
   width: 90%;
   padding: 20px;
+  box-shadow: var(--shadow-4);
 }
 
 .imageContainer {
@@ -19,8 +20,9 @@
 .titleContainer {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
-  padding: 40px 0;
+  padding: 20px 0;
   width: 60%;
 }
 
@@ -37,15 +39,6 @@
   margin: 25px 0 40px;
 }
 
-.infoContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  width: 100%;
-}
-
 .showButton {
   display: flex;
   align-items: center;
@@ -57,7 +50,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
     gap: 20px;
   }
 
@@ -71,15 +63,10 @@
   }
 
   .titleContainer {
-    padding: 0;
     align-items: center;
   }
 
   .titleDescription {
     text-align: center;
-  }
-
-  .infoContainer {
-    padding: 40px 0;
   }
 }

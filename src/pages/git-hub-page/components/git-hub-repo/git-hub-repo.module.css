@@ -3,8 +3,7 @@
   flex-direction: column;
   gap: 10px;
   list-style: none;
-  border: 1px solid var(--clr-bg-1);
-  border-radius: 10px;
+  box-shadow: var(--shadow-5);
   padding: 20px;
   width: 60%;
 }

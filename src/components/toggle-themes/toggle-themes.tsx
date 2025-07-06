@@ -4,7 +4,7 @@ import ToggleDark from "@/assets/toggle-black.svg";
 import ToggleLight from "@/assets/toggle-white.svg";
 
 export const ToggleThemes = () => {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   const toggleThemes = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
@@ -18,7 +18,7 @@ export const ToggleThemes = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <>
       {theme === "dark" ? (
         <img
           src={ToggleDark}
@@ -34,6 +34,6 @@ export const ToggleThemes = () => {
           onClick={toggleThemes}
         />
       )}
-    </div>
+    </>
   );
 };

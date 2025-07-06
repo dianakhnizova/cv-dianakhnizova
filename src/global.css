@@ -39,6 +39,12 @@ a:active {
   --shadow-1: 0 10px 40px rgb(0 0 0 / 5%), 0 -10px 40px rgb(0 0 0 / 5%);
   --shadow-2: 0px 5px 15.2px 0px #00000021;
   --shadow-3: 0 12px 24px rgb(0 0 0 / 20%);
+  --shadow-4: rgb(0 0 0 / 16%) 0px 1px 4px;
+  --shadow-5:
+    rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  --shadow-6:
+    rgb(0 0 0 / 10%) 0px 0px 5px 0px, rgb(0 0 0 / 10%) 0px 0px 1px 0px;
+  --shadow-7: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
 }
 
 :root.dark {
@@ -47,6 +53,16 @@ a:active {
   --clr-active: #ffd700;
   --clr-bg-button: #fff;
   --clr-line-button: #000;
+  --shadow-4: rgb(145 143 143 / 92.9%) 0px 1px 4px;
+  --shadow-5:
+    rgb(157 161 164 / 30%) 0px 1px 2px 0px,
+    rgb(157 161 164 / 15%) 0px 2px 6px 2px;
+  --shadow-6:
+    rgb(183 179 179 / 94%) 0px 0px 5px 0px,
+    rgb(183 179 179 / 85.9%) 0px 0px 1px 0px;
+  --shadow-7:
+    rgb(234 230 230 / 74.2%) 0px 6px 24px 0px,
+    rgb(234 230 230 / 74.2%) 0px 0px 0px 1px;
 }
 
 :root.light {

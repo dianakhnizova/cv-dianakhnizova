@@ -2,15 +2,15 @@
   background-color: var(--clr-bg-button);
   color: var(--clr-line-button);
   cursor: pointer;
-  box-shadow: 0 0 0 1px transparent;
+  box-shadow: var(--shadow-4);
   transition: all 0.2s ease;
   font-family: var(--ff-base);
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
+  border: 1px solid transparent;
   border-radius: 5px;
-  padding: 5px 8px;
+  padding: 3px 14px;
   align-items: center;
-  border: 1px solid var(--clr-bg-1);
 
   &.primary {
     background-color: var(--clr-bg-button);
@@ -23,15 +23,13 @@
   &.active {
     background-color: var(--clr-line);
     color: var(--clr-bg-1);
-    border: 0.5px solid var(--clr-bg-1);
-    box-shadow: 0 0 0 1px var(--clr-bg-1);
+    border: 1px solid var(--clr-bg-1);
   }
 
   &:hover {
     background-color: var(--clr-line);
     color: var(--clr-bg-1);
-    border: 0.5px solid var(--clr-bg-1);
-    box-shadow: 0 0 0 1px var(--clr-bg-1);
+    border: 1px solid var(--clr-bg-1);
   }
 
   &:disabled {

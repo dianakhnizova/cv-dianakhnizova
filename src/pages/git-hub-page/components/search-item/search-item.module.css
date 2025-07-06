@@ -7,11 +7,10 @@
 }
 
 .input {
-  border: 1px solid var(--clr-bg-1);
-  border-radius: 10px;
+  box-shadow: var(--shadow-6);
   background: transparent;
   color: var(--clr-bg-1);
-  padding: 10px;
+  padding: 8px 24px;
   width: 26%;
 }
 

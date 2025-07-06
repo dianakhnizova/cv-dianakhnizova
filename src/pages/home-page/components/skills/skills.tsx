@@ -4,7 +4,6 @@ import { messages } from "./messages";
 import styles from "./skills.module.css";
 import type { JSX } from "react";
 import { useState } from "react";
-import FrameIcon from "@/assets/Frame.png";
 
 export const Skills = () => {
   const [skills, setSkills] = useState<JSX.Element | null>(null);
@@ -27,8 +26,6 @@ export const Skills = () => {
       </div>
       <div className={styles.skillsContainer}>
         <Button onClick={handleSHowSkills} className={styles.showButton}>
-          <img src={FrameIcon} alt="frame-button" />
-
           {!skills ? messages.showButton : messages.closeButton}
         </Button>
         {skills}

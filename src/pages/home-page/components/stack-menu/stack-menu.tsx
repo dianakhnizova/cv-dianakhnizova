@@ -1,7 +1,6 @@
 import { messages } from "./messages";
 import styles from "./stack-menu.module.css";
 import { Button } from "@/components/button/button";
-import FrameIcon from "@/assets/Frame.png";
 import { RandomProject } from "@/components/random-projects/random-projects";
 import { TechStack } from "./components/tech-stack/tech-stack";
 import type { JSX } from "react";
@@ -34,7 +33,6 @@ export const StackMenu = () => {
           onClick={() => toggleStackContent("random")}
           className={styles.stackButton}
         >
-          <img src={FrameIcon} alt="frame-button" />
           {messages.randomButton}
         </Button>
         <Button
@@ -42,7 +40,6 @@ export const StackMenu = () => {
           onClick={() => toggleStackContent("tech-stack")}
           className={styles.stackButton}
         >
-          <img src={FrameIcon} alt="frame-button" />
           {messages.techStackButton}
         </Button>
       </div>
