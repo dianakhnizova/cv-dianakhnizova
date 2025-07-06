@@ -26,3 +26,11 @@
   margin-top: 20px;
   padding: 5px 60px;
 }
+
+@media (width <= 800px) {
+  .aboutMeContainer {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+  }
+}

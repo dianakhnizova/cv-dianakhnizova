@@ -2,24 +2,43 @@ import { Button } from "@/components/button/button";
 import { messages } from "./messages";
 import { navMenuItemList } from "./nav-menu-items/nav-menu-item-list";
 import styles from "./nav-menu.module.css";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import classNames from "classnames";
 import { PagePath } from "@/router/enums";
 import { useMobileMenuToggle } from "@/utils/hooks/use-mobile-menu-toggle";
 import Burger from "@/assets/burger.svg";
-
-const handleLinkClick = (to: string) => () => {
-  if (location.pathname === to) {
-    globalThis.location.reload();
-  }
-};
+import { useEffect, useState } from "react";
 
 export const NavMenu = () => {
   const { isMobile, isMenuOpen, toggleMenu, closeMenu } = useMobileMenuToggle();
-  const navigate = useNavigate();
+  const [selectedLink, setSelectedLink] = useState<string | null>(null);
 
-  const toProtfolio = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const currentLink = navMenuItemList.find(
+      (link) => location.pathname === link.to,
+    );
+
+    if (currentLink) {
+      setSelectedLink(currentLink.label);
+      document.title = currentLink.label;
+    } else if (location.pathname === PagePath.deploysPage) {
+      setSelectedLink(messages.portfolioButton);
+      document.title = messages.portfolioButton;
+    }
+  }, [location.pathname]);
+
+  const handleLinkClick = (to: string, label: string) => () => {
+    setSelectedLink(label);
+    void navigate(to);
+  };
+
+  const toProtfolio = (label: string) => {
     void navigate(PagePath.deploysPage);
+    setSelectedLink(label);
+    document.title = label;
   };
 
   return (
@@ -38,16 +57,24 @@ export const NavMenu = () => {
             <NavLink
               key={link.label}
               to={link.to}
-              className={styles.menuItem}
-              onClick={() => {
-                handleLinkClick(link.to);
-              }}
+              className={classNames(
+                styles.menuItem,
+                selectedLink === link.label ? styles.selectedLink : "",
+              )}
+              onClick={handleLinkClick(link.to, link.label)}
             >
               {link.label}
             </NavLink>
           );
         })}
-        <Button onClick={toProtfolio} className={styles.button}>
+        <Button
+          isActive={selectedLink === messages.portfolioButton}
+          onClick={() => toProtfolio(messages.portfolioButton)}
+          className={classNames(
+            styles.button,
+            selectedLink ? styles.selectedButton : "",
+          )}
+        >
           {messages.portfolioButton}
         </Button>
       </nav>
