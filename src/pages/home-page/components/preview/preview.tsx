@@ -18,6 +18,10 @@ export const Preview = ({ isLowHeight, isScrolled }: Props) => {
     void navigate(PagePath.deploysPage);
   };
 
+  const toGitHubPage = () => {
+    void navigate(PagePath.gitHubPage);
+  };
+
   return (
     <div
       className={classNames(
@@ -34,7 +38,7 @@ export const Preview = ({ isLowHeight, isScrolled }: Props) => {
           className={classNames(styles.projectContainer, styles.gitContainer)}
         >
           <p className={styles.projectTitle}>{messages.projectGitHubTitle}</p>
-          <Button className={styles.previewButton}>
+          <Button onClick={toGitHubPage} className={styles.previewButton}>
             <img src={FrameIcon} alt="frame-button" />
             {messages.buttonTitle}
           </Button>

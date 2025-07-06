@@ -15,4 +15,8 @@ export const navMenuItemList: LinkItems[] = [
     to: PagePath.contactPage,
     label: messages.contactLinkTitle,
   },
+  {
+    to: PagePath.gitHubPage,
+    label: messages.gitHubLinkTitle,
+  },
 ];

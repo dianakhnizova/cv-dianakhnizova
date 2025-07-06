@@ -1,0 +1,15 @@
+.repoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  border: 1px solid var(--clr-bg-1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--clr-bg-1);
+}

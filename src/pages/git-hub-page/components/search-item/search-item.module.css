@@ -1,0 +1,16 @@
+.searchContainer {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.input {
+  border: 1px solid var(--clr-bg-1);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--clr-bg-1);
+  padding: 10px;
+  width: 26%;
+}

@@ -9,7 +9,7 @@ import { Skills } from "./components/skills/skills";
 import type { JSX } from "react";
 import { useState } from "react";
 import { AboutMe } from "./components/about-me/about-me";
-import { StackMenu } from "./components/ stack-menu/stack-menu";
+import { StackMenu } from "./components/stack-menu/stack-menu";
 import { ContactMeForm } from "@/components/contact-me-form/contact-me-form";
 
 export const HomePage = () => {

@@ -1,4 +1,7 @@
-import { CHAT_ID_VALUE, TOKEN_BOT } from "./constants";
+import {
+  CHAT_ID_VALUE,
+  TOKEN_BOT,
+} from "../components/contact-me-form/constants";
 
 export const sendToTelegram = async (
   name: string,

@@ -6,6 +6,7 @@ import { NotFoundPage } from "../pages/not-found-page/not-found-page";
 import { DeploysPage } from "@/pages/deploys-page/deploys-page";
 import { AboutPage } from "@/pages/about-page/about-page";
 import { ContactPage } from "@/pages/contact-page/contact-page";
+import { GitHubPage } from "@/pages/git-hub-page/git-hub-page";
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +15,8 @@ export const router = createBrowserRouter([
     children: [
       { index: true, Component: HomePage },
       { path: PagePath.notFound, Component: NotFoundPage },
+      { path: PagePath.gitHubPage, Component: GitHubPage },
+
       { path: PagePath.deploysPage, Component: DeploysPage },
       { path: PagePath.aboutPage, Component: AboutPage },
       { path: PagePath.contactPage, Component: ContactPage },

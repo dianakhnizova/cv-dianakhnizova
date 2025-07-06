@@ -3,7 +3,7 @@ import { Button } from "../button/button";
 import styles from "./contact-me-form.module.css";
 import { messages } from "./messages";
 import FrameIcon from "@/assets/Frame.png";
-import { sendToTelegram } from "./send-to-telegram";
+import { sendToTelegram } from "../../api/send-to-telegram";
 import { NameInput } from "./components/name-input/name-input";
 import { TelegramInput } from "./components/telegram-input/telegram-input";
 import { ReasonSelect } from "./components/reason-select/reason-select";
