@@ -12,7 +12,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 220px 30px 30px;
+  padding: 30px;
+  box-shadow: var(--shadow-4);
 }
 
 .previewContainer {
@@ -27,7 +28,7 @@
   transform: scale(0.9) translateY(20px);
 
   .projectContainer {
-    padding: 220px 30px 30px;
+    padding: 30px;
   }
 
   .previewContainer {
@@ -55,14 +56,8 @@
   text-align: center;
 }
 
-.gitContainer {
-  background-image: url("../../../../assets/IMAGE1.png");
-  background-position: center;
-  background-size: cover;
-}
-
 .deployContainer {
-  background-image: url("../../../../assets/IMAGE2.png");
+  background-image: url('../../../../assets/IMAGE2.png');
   background-position: center;
   background-size: cover;
 }
@@ -80,6 +75,11 @@
   gap: 6px;
   padding: 5px;
   width: 180px;
+}
+
+.image {
+  width: 100px;
+  height: 200px;
 }
 
 @media (width <= 600px) {
