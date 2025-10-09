@@ -1,7 +1,7 @@
 import styles from './preview.module.css';
 import { messages } from './messages';
 import classNames from 'classnames';
-import { Button } from '@/components/button/button';
+import { Button } from '@/components/button/Button';
 import { useNavigate } from 'react-router-dom';
 import { PagePath } from '@/router/enums';
 import { useTheme } from '@/utils/hooks/use-theme';

@@ -1,5 +1,5 @@
-import styles from "./contact.module.css";
-import { contactsList } from "@/components/contacts/contact-items-list/contact-list";
+import styles from './Contact.module.css';
+import { contactsList } from '@/components/contacts/contact-items-list/ContactList';
 
 export const Contacts = () => {
   return (

@@ -1,16 +1,15 @@
-// src/hooks/useTheme.ts
-import { useSelector, useDispatch } from 'react-redux';
-import type { RootState, AppDispatch } from '@/store/store';
-import { toggleTheme, setTheme } from '@/store/theme.slice';
 import type { Theme } from '@/sources/enums';
+import { useActions } from './use-actions';
+import { useSelector } from 'react-redux';
+import { selectTheme } from '@/store/slices/theme/selectors';
 
 export const useTheme = () => {
-  const theme = useSelector((state: RootState) => state.theme.theme);
-  const dispatch: AppDispatch = useDispatch();
+  const theme = useSelector(selectTheme);
+  const { setTheme, toggleTheme } = useActions();
 
   return {
     theme,
-    setTheme: (value: Theme) => dispatch(setTheme(value)),
-    toggleTheme: () => dispatch(toggleTheme()),
+    setTheme: (value: Theme) => setTheme(value),
+    toggleTheme: () => toggleTheme(),
   };
 };

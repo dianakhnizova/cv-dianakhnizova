@@ -1,6 +1,6 @@
-import ClassNames from "classnames";
-import styles from "./button.module.css";
-import { ButtonVariants } from "./enums";
+import ClassNames from 'classnames';
+import styles from './Button.module.css';
+import { ButtonVariants } from './enums';
 
 type Props = {
   variant?: ButtonVariants;
@@ -26,7 +26,7 @@ export const Button: React.FC<Props> = ({
         {
           [styles.active]: isActive,
         },
-        className,
+        className
       )}
       {...rest}
     />

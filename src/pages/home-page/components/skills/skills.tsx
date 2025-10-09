@@ -1,9 +1,9 @@
-import { Button } from "@/components/button/button";
-import { SkillItem } from "./components/skill-item/skill-item";
-import { messages } from "./messages";
-import styles from "./skills.module.css";
-import type { JSX } from "react";
-import { useState } from "react";
+import { Button } from '@/components/button/Button';
+import { SkillItem } from './components/skill-item/skill-item';
+import { messages } from './messages';
+import styles from './skills.module.css';
+import type { JSX } from 'react';
+import { useState } from 'react';
 
 export const Skills = () => {
   const [skills, setSkills] = useState<JSX.Element | null>(null);

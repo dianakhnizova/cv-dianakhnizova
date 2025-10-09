@@ -1,6 +1,6 @@
-import styles from "./wrapper.module.css";
-import type { FC, ReactNode } from "react";
-import classNames from "classnames";
+import styles from './Wrapper.module.css';
+import type { FC, ReactNode } from 'react';
+import classNames from 'classnames';
 
 type Props = {
   children: ReactNode;

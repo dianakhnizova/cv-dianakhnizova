@@ -1,6 +1,6 @@
-import styles from "./contact-page.module.css";
-import { messages } from "../../pages/contact-page/messages";
-import { Contacts } from "@/components/contacts/contacts";
+import styles from './contact-page.module.css';
+import { messages } from '../../pages/contact-page/messages';
+import { Contacts } from '@/components/contacts/Contacts';
 
 export const ContactPage = () => {
   return (

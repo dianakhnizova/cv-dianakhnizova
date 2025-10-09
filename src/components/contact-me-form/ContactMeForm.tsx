@@ -1,0 +1,70 @@
+import { useState } from 'react';
+import { Button } from '../button/Button';
+import styles from './ContactMeForm.module.css';
+import { messages } from './messages';
+import { sendToTelegram } from '../../api/send-to-telegram';
+import { NameInput } from './components/name-input/NameInput';
+import { TelegramInput } from './components/telegram-input/TelegramInput';
+import { ReasonSelect } from './components/reason-select/ReasonSelect';
+
+export const ContactMeForm = () => {
+  const [name, setName] = useState('');
+  const [errorName, setErrorName] = useState('');
+  const [telegram, setTelegram] = useState('');
+  const [errorTelegram, setErrorTelegram] = useState('');
+  const [reason, setReason] = useState('help');
+  const [submitMessage, setSubmitMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      await sendToTelegram(name, telegram, reason);
+
+      setSubmitMessage(messages.sendOk);
+      setTimeout(() => {
+        setSubmitMessage('');
+      }, 3000);
+
+      setName('');
+      setTelegram('');
+      setReason('help');
+      setErrorName('');
+      setErrorTelegram('');
+    } catch {
+      setSubmitMessage(messages.sendError);
+    }
+  };
+
+  return (
+    <div className={styles.container}>
+      <h3 className={styles.mainTitle}>{messages.contactMeTitle}</h3>
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <NameInput
+          name={name}
+          setName={setName}
+          error={errorName}
+          setError={setErrorName}
+        />
+        <TelegramInput
+          telegram={telegram}
+          setTelegram={setTelegram}
+          error={errorTelegram}
+          setError={setErrorTelegram}
+        />
+        <ReasonSelect reason={reason} setReason={setReason} />
+
+        <Button
+          disabled={!!errorName || !!errorTelegram || !(name && telegram)}
+          type="submit"
+          className={styles.sendButton}
+        >
+          {messages.sendButton}
+        </Button>
+        {submitMessage && (
+          <p className={styles.errorContainer}>{submitMessage}</p>
+        )}
+      </form>
+    </div>
+  );
+};

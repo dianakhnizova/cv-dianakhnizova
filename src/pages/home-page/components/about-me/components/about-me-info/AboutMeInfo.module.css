@@ -1,0 +1,54 @@
+.aboutMeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  box-shadow: var(--shadow-5);
+  background-color: var(--md-sys-color-surface);
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.dataContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+  align-items: flex-start;
+  gap: 20px;
+  box-shadow: var(--shadow-4);
+  padding: 0 10px;
+}
+
+.label {
+  grid-column: 1;
+  font-size: 12px;
+  color: var(--clr-active);
+}
+
+.data {
+  grid-column: 2;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.biography {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+@media (width <= 800px) {
+  .aboutMeContainer {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+  }
+}

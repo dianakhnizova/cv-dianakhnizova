@@ -1,4 +1,4 @@
-import { Button } from '@/components/button/button';
+import { Button } from '@/components/button/Button';
 import styles from './contacts-menu.module.css';
 import { messages } from './messages';
 import DarkMeImg from '@/assets/dark-me-contact.png';

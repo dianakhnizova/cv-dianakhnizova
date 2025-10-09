@@ -1,8 +1,8 @@
-import styles from "./search-item.module.css";
-import { messages } from "./messages";
-import { Button } from "@/components/button/button";
-import { fetchUserRepos } from "@/api/fetch-git-hub";
-import type { UserReposData } from "../../types";
+import styles from './search-item.module.css';
+import { messages } from './messages';
+import { Button } from '@/components/button/Button';
+import { fetchUserRepos } from '@/api/fetch-git-hub';
+import type { UserReposData } from '../../types';
 
 interface Props {
   searchRepo: string;

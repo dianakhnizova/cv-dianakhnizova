@@ -1,12 +1,12 @@
-import { createBrowserRouter } from "react-router-dom";
-import { PagePath } from "./enums";
-import { Root } from "./root/root";
-import { HomePage } from "../pages/home-page/home-page";
-import { NotFoundPage } from "../pages/not-found-page/not-found-page";
-import { DeploysPage } from "@/pages/deploys-page/deploys-page";
-import { AboutPage } from "@/pages/about-page/about-page";
-import { ContactPage } from "@/pages/contact-page/contact-page";
-import { GitHubPage } from "@/pages/git-hub-page/git-hub-page";
+import { createBrowserRouter } from 'react-router-dom';
+import { PagePath } from './enums';
+import { Root } from './root/root';
+import { HomePage } from '../pages/home-page/HomePage';
+import { NotFoundPage } from '../pages/not-found-page/not-found-page';
+import { DeploysPage } from '@/pages/deploys-page/deploys-page';
+import { AboutPage } from '@/pages/about-page/AboutPage';
+import { ContactPage } from '@/pages/contact-page/contact-page';
+import { GitHubPage } from '@/pages/git-hub-page/git-hub-page';
 
 export const router = createBrowserRouter([
   {

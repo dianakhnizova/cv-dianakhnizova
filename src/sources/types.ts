@@ -1,4 +1,5 @@
-import type { MouseEvent } from "react";
+import type { MouseEvent } from 'react';
+import type { Theme } from './enums';
 
 export type PageTitle = Record<string, string>;
 export type LinkItems = {
@@ -11,3 +12,10 @@ export type MyData = {
   label: string;
   data: string;
 };
+
+export type Interest = {
+  image: string;
+  title: string;
+};
+
+export type ThemeType = Theme.Dark | Theme.Light;

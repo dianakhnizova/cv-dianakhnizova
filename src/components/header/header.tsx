@@ -1,14 +1,14 @@
-import styles from "./header.module.css";
-import { Wrapper } from "@/components/wrapper/wrapper";
-import { NavMenu } from "./nav-menu/nav-menu";
-import { Logo } from "./logo/logo";
+import styles from './Header.module.css';
+import { Wrapper } from '@/components/wrapper/Wrapper';
+import { NavMenu } from './nav-menu/NavMenu';
+import { ThemeToggler } from './theme-toggler/ThemeToggler';
 
 export const Header = () => {
   return (
     <header className={styles.header}>
       <Wrapper className={styles.headerWrapper}>
         <div className={styles.container}>
-          <Logo />
+          <ThemeToggler />
           <NavMenu />
         </div>
       </Wrapper>

@@ -1,9 +1,9 @@
-import styles from "./footer.module.css";
-import { Wrapper } from "../wrapper/wrapper";
-import { messages } from "./messages";
-import { PagesLinks } from "@/components/pages-links/pages-links";
-import { Logo } from "../logo/logo";
-import { SocialIcons } from "../social-icons/social-icons";
+import styles from './Footer.module.css';
+import { Wrapper } from '../wrapper/Wrapper';
+import { messages } from './messages';
+import { PagesLinks } from '@/components/pages-links/PagesLinks';
+import { SocialIcons } from '../social-icons/SocialIcons';
+import { Logo } from '../logo/Logo';
 
 export const Footer = () => {
   return (
@@ -13,6 +13,7 @@ export const Footer = () => {
           <Logo />
           <PagesLinks />
         </div>
+
         <div className={styles.bottomContainer}>
           <p className={styles.bottomTitle}>{messages.bottomTitle}</p>
           <SocialIcons />

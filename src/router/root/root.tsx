@@ -1,7 +1,7 @@
-import { Footer } from "../../components/footer/footer";
-import { Header } from "../../components/header/header";
-import { MainSection } from "../../components/main-section/main-section";
-import styles from "./root.module.css";
+import { Footer } from '../../components/footer/Footer';
+import { Header } from '../../components/header/Header';
+import { MainSection } from '../../components/main-section/MainSection';
+import styles from './root.module.css';
 
 export const Root = () => {
   return (
