@@ -18,4 +18,10 @@ export type Interest = {
   title: string;
 };
 
+export type Project = {
+  title: string;
+  description: string;
+  language: string;
+  image: string;
+};
 export type ThemeType = Theme.Dark | Theme.Light;

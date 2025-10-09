@@ -1,5 +1,5 @@
-import styles from "./skill-item.module.css";
-import { skillItemsList } from "./skill-items-list/skill-items-list";
+import styles from './SkillItem.module.css';
+import { skillItemsList } from './skill-items-list/skill-items-list';
 
 export const SkillItem = () => {
   return (
@@ -8,9 +8,10 @@ export const SkillItem = () => {
         return (
           <div key={index} className={styles.skillItemContainer}>
             <p className={styles.label}>{skillItem.label}</p>
+
             <div className={styles.skills}>
               <span className={styles.skill}>
-                {skillItem.skills.map((skill) => skill.skill).join(", ")}
+                {skillItem.skills.map(skill => skill.skill).join(', ')}
               </span>
             </div>
           </div>

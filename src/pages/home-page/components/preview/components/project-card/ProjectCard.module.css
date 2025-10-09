@@ -1,0 +1,46 @@
+.project {
+  display: flex;
+  width: 90%;
+  gap: 20px;
+  background-color: var(--clr-line);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+
+.description {
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.techStack {
+  display: flex;
+  gap: 8px;
+}
+
+.stack {
+  color: var(--clr-active);
+  background-color: var(--md-sys-color-surface);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.projectImage {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}

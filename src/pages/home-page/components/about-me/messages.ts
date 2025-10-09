@@ -4,5 +4,5 @@ export const messages = {
     'I’m striving to grow as a frontend developer because I’m truly inspired by the combination of visual thinking, code, and user interaction.',
   showButton: 'About me',
   downloadButton: 'Download CV',
-  closeButton: 'Close info',
+  closeButton: 'Hide info',
 };

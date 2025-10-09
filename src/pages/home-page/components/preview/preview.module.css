@@ -1,10 +1,14 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
   overflow: hidden;
   transition: transform 0.8s ease;
-  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--elevation-level3);
+  background-color: var(--md-sys-color-surface);
 }
 
 .projectContainer {
@@ -70,16 +74,11 @@
   margin-bottom: 30px;
 }
 
-.previewButton {
+.projects {
   display: flex;
-  gap: 6px;
-  padding: 5px;
-  width: 180px;
-}
-
-.image {
-  width: 100px;
-  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 @media (width <= 600px) {
@@ -90,9 +89,5 @@
 
   .projectContainer {
     width: 90%;
-  }
-
-  .previewButton {
-    width: 120px;
   }
 }

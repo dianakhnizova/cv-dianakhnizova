@@ -17,10 +17,7 @@
   }
 
   &.secondary {
-    background-color: var(--clr-accent-7);
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+    background-color: var(--md-sys-color-surface);
   }
 
   &.active {

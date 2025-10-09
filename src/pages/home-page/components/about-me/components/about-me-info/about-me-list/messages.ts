@@ -1,14 +1,14 @@
 export const messages = {
   labels: {
-    labelName: 'Name: ',
-    labelAge: 'Age: ',
-    labelLocation: 'Location: ',
-    labelEducation: 'Education: ',
-    labelCertificate: 'Certificates: ',
-    labelExperience: 'Experience: ',
-    labelFreelance: 'Freelance: ',
-    labelReadyWork: 'Ready to Work: ',
-    labelEnglish: 'English: ',
+    labelName: 'Name ',
+    labelAge: 'Age ',
+    labelLocation: 'Location ',
+    labelEducation: 'Education ',
+    labelCertificate: 'Certificates ',
+    labelExperience: 'Experience ',
+    labelFreelance: 'Freelance ',
+    labelReadyWork: 'Ready to Work ',
+    labelEnglish: 'English ',
   },
 
   datas: {
