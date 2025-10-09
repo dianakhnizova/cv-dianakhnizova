@@ -5,19 +5,32 @@ export const projectList: Project[] = [
   {
     title: messages.title.rest,
     description: messages.description.rest,
-    language: messages.language.react,
+    language: [
+      { title: messages.language.react },
+      { title: messages.language.ts },
+      { title: messages.language.css },
+    ],
     image: messages.image.rest,
   },
   {
     title: messages.title.library,
     description: messages.description.library,
-    language: messages.language.react,
-    image: messages.image.rest,
+    language: [
+      { title: messages.language.react },
+      { title: messages.language.ts },
+      { title: messages.language.css },
+      { title: messages.language.nextJs },
+    ],
+    image: messages.image.library,
   },
   {
     title: messages.title.climate,
     description: messages.description.climate,
-    language: messages.language.react,
-    image: messages.image.rest,
+    language: [
+      { title: messages.language.react },
+      { title: messages.language.ts },
+      { title: messages.language.css },
+    ],
+    image: messages.image.climate,
   },
 ];

@@ -1,16 +1,16 @@
 import { Wrapper } from '@/components/wrapper/Wrapper';
 import styles from './HomePage.module.css';
-import { ContactsMenu } from './components/contacts-menu/contacts-menu';
+import { ContactsMenu } from './components/contacts-menu/ContactsMenu';
 import { useViewport } from '@/utils/hooks/use-viewport';
 import { useScroll } from '@/utils/hooks/use-scroll';
 import type { JSX } from 'react';
 import { useState } from 'react';
 import { AboutMe } from './components/about-me/AboutMe';
-import { StackMenu } from './components/stack-menu/stack-menu';
+import { StackMenu } from './components/stack-menu/StackMenu';
 import { ContactMeForm } from '@/components/contact-me-form/ContactMeForm';
 import { AboutMeInfo } from './components/about-me/components/about-me-info/AboutMeInfo';
 import { Skills } from './components/skills/Skills';
-import { Preview } from './components/preview/preview';
+import { Preview } from './components/preview/Preview';
 
 export const HomePage = () => {
   const { isLowHeight } = useViewport();

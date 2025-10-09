@@ -11,19 +11,9 @@
   background-color: var(--md-sys-color-surface);
 }
 
-.projectContainer {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px;
-  box-shadow: var(--shadow-4);
-}
-
 .previewContainer {
   display: none;
   justify-content: center;
-  gap: 18px;
   width: 100%;
 }
 
@@ -31,12 +21,11 @@
   width: 100%;
   transform: scale(0.9) translateY(20px);
 
-  .projectContainer {
-    padding: 30px;
-  }
-
   .previewContainer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 }
 
@@ -58,36 +47,4 @@
   font-weight: 100;
   line-height: 30px;
   text-align: center;
-}
-
-.deployContainer {
-  background-image: url('../../../../assets/IMAGE2.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.projectTitle {
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-@media (width <= 600px) {
-  .previewContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .projectContainer {
-    width: 90%;
-  }
 }

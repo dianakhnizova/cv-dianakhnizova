@@ -1,11 +1,11 @@
 .container {
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-top: 60px;
   box-shadow: var(--shadow-4);
+  margin-top: 40px;
 }
 
 .contactContainer {
@@ -19,14 +19,14 @@
 
 .title {
   font-weight: 200;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 42px;
   text-align: center;
 }
 
 .description {
   font-weight: 100;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 30px;
   text-align: center;
 }
@@ -35,16 +35,6 @@
   display: flex;
   align-items: center;
   gap: 6px;
-}
-
-.imageContainer {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
-
-.image {
-  width: 50%;
 }
 
 .viewHeight {
@@ -57,9 +47,5 @@
   .container {
     flex-direction: column;
     gap: 40px;
-  }
-
-  .image {
-    width: 80%;
   }
 }

@@ -23,16 +23,15 @@ export const Preview = ({ isLowHeight, isScrolled }: Props) => {
       </div>
 
       <div className={styles.previewContainer}>
-        <div className={styles.projects}>
-          {projectList.map(project => (
-            <ProjectCard
-              title={project.title}
-              description={project.description}
-              language={project.language}
-              image={project.image}
-            />
-          ))}
-        </div>
+        {projectList.map(project => (
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            language={project.language.map(lang => lang.title)}
+            image={project.image}
+          />
+        ))}
       </div>
     </div>
   );

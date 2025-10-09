@@ -11,6 +11,7 @@ export type LinkItems = {
 export type MyData = {
   label: string;
   data: string;
+  name?: string;
 };
 
 export type Interest = {
@@ -18,10 +19,14 @@ export type Interest = {
   title: string;
 };
 
+export type Languages = {
+  title: string;
+};
+
 export type Project = {
   title: string;
   description: string;
-  language: string;
+  language: Languages[];
   image: string;
 };
 export type ThemeType = Theme.Dark | Theme.Light;

@@ -1,5 +1,4 @@
 .button {
-  background-color: var(--clr-bg-button);
   color: var(--clr-bg-1);
   cursor: pointer;
   box-shadow: var(--shadow-4);

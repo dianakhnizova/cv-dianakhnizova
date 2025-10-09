@@ -5,7 +5,7 @@ interface Props {
   title: string;
   description: string;
   image: string;
-  language: string;
+  language: string[];
 }
 
 export const ProjectCard: FC<Props> = ({
@@ -21,8 +21,11 @@ export const ProjectCard: FC<Props> = ({
         <p className={styles.description}>{description}</p>
 
         <div className={styles.techStack}>
-          <p className={styles.stack}>{language}</p>
-          <p className={styles.stack}>TypeScript</p>
+          {language.map((lang, index) => (
+            <span key={index} className={styles.stack}>
+              {lang}
+            </span>
+          ))}
         </div>
       </div>
 

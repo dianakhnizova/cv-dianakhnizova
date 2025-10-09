@@ -5,7 +5,7 @@ import { HomePage } from '../pages/home-page/HomePage';
 import { NotFoundPage } from '../pages/not-found-page/not-found-page';
 import { DeploysPage } from '@/pages/deploys-page/deploys-page';
 import { AboutPage } from '@/pages/about-page/AboutPage';
-import { ContactPage } from '@/pages/contact-page/contact-page';
+import { ContactPage } from '@/pages/contact-page/ContactPage';
 import { GitHubPage } from '@/pages/git-hub-page/git-hub-page';
 
 export const router = createBrowserRouter([

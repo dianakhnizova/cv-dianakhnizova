@@ -1,12 +1,11 @@
 .container {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
-  gap: 10px;
-  box-shadow: var(--shadow-5);
-  padding: 30px;
-  margin-top: 40px;
+  width: 60%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--elevation-level3);
+  background-color: var(--md-sys-color-surface);
 }
 
 .form {
@@ -27,27 +26,32 @@
 }
 
 .input {
-  box-shadow: var(--shadow-6);
-  background: transparent;
+  background: var(--clr-line);
+  border: 1px solid transparent;
+  border-radius: 20px;
   color: var(--clr-bg-1);
   padding: 10px;
-  margin: 8px 0 20px;
   width: 90%;
+  margin-bottom: 30px;
+
+  &:focus {
+    border: 1px solid var(--clr-active);
+  }
 }
 
 .errorInput {
-  border: 1.5px solid var(--clr-error-1);
-  border-radius: 10px;
+  border: 1px solid var(--clr-error-1);
+  border-radius: 20px;
   background: transparent;
   color: var(--clr-bg-1);
   padding: 10px;
-  margin-top: 8px;
   transform: scale(1.05);
+  width: 90%;
 }
 
 .select {
-  box-shadow: var(--shadow-6);
-  background: transparent;
+  background: var(--clr-line);
+  border-radius: 20px;
   color: var(--clr-bg-1);
   padding: 10px;
   margin: 8px 0 40px;
@@ -66,7 +70,7 @@
   font-weight: 100;
   font-size: 10px;
   padding: 8px;
-  margin-bottom: 18px;
+  color: var(--clr-error-2);
 }
 
 @media (width <= 800px) {

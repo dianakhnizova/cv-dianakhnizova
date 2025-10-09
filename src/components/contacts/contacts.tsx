@@ -8,7 +8,14 @@ export const Contacts = () => {
         return (
           <div key={index} className={styles.contact}>
             <p className={styles.label}>{contact.label}</p>
-            <span className={styles.value}>{contact.data}</span>
+            <a
+              href={contact.data}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.value}
+            >
+              {contact.name}
+            </a>
           </div>
         );
       })}

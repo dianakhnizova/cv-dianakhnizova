@@ -1,5 +1,5 @@
 import { messages } from './messages';
-import styles from './stack-menu.module.css';
+import styles from './StackMenu.module.css';
 import { Button } from '@/components/button/Button';
 import { RandomProject } from '@/components/random-projects/RandomProjects';
 import { TechStack } from './components/tech-stack/tech-stack';
@@ -35,6 +35,7 @@ export const StackMenu = () => {
         >
           {messages.randomButton}
         </Button>
+
         <Button
           isActive={activeButton === 'tech-stack'}
           onClick={() => toggleStackContent('tech-stack')}
@@ -43,6 +44,7 @@ export const StackMenu = () => {
           {messages.techStackButton}
         </Button>
       </div>
+
       <div className={styles.stackContainer}>{stackContent}</div>
     </div>
   );

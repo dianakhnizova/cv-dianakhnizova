@@ -28,6 +28,7 @@ export const TelegramInput = ({
       <label htmlFor="name" className={styles.label}>
         {messages.labelTelegram}
       </label>
+
       <input
         id="telegram"
         type="text"
@@ -36,6 +37,7 @@ export const TelegramInput = ({
         placeholder={messages.inputPlaceholderTelegram}
         className={!error ? styles.input : styles.errorInput}
       />
+
       {error && <p className={styles.errorContainer}>{error}</p>}
     </>
   );
