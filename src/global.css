@@ -54,9 +54,9 @@ a:active {
 :root.light {
   --clr-bg-1: #000;
   --clr-line: #fff;
-  --clr-active: #3db6d2;
+  --clr-active: #34cdef;
   --clr-line-button: #000;
-  --md-sys-color-surface: #ceeff8;
+  --md-sys-color-surface: #f5f2f2;
 }
 
 html,
