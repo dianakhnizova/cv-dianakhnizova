@@ -14,7 +14,6 @@ export const ContactsMenu = ({ isContent, onClick }: Props) => {
     <div className={styles.container}>
       <div className={styles.contactContainer}>
         <p className={styles.title}>{messages.contactTitle}</p>
-        <p className={styles.description}>{messages.descriptionTitle}</p>
 
         <Button variant={ButtonVariants.secondary} onClick={onClick}>
           {!isContent ? messages.contactMeButton : messages.closeButton}

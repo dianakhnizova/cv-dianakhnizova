@@ -11,6 +11,7 @@ export const projectList: Project[] = [
       { title: messages.language.css },
     ],
     image: messages.image.rest,
+    link: messages.link.rest,
   },
   {
     title: messages.title.library,
@@ -22,6 +23,7 @@ export const projectList: Project[] = [
       { title: messages.language.nextJs },
     ],
     image: messages.image.library,
+    link: messages.link.library,
   },
   {
     title: messages.title.climate,
@@ -32,5 +34,6 @@ export const projectList: Project[] = [
       { title: messages.language.css },
     ],
     image: messages.image.climate,
+    link: messages.link.climate,
   },
 ];

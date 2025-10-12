@@ -39,6 +39,7 @@ a:active {
   --shadow-1:
     rgb(159 159 161 / 41.9%) 0 0 0.25em, rgb(100 100 101 / 36.4%) 0 0.25em 1em;
   --shadow-2: rgb(55 65 81 / 50%) 0 1px 3px 0, rgb(55 65 81 / 50%) 0 0 0 1px;
+  --shadow-3: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
   --elevation-level3:
     0px 1px 3px 0px rgb(var(--md-sys-color-shadow-rgb), 0.3),
     0px 4px 8px 3px rgb(var(--md-sys-color-shadow-rgb), 0.15);
@@ -47,16 +48,16 @@ a:active {
 :root.dark {
   --clr-bg-1: #fff;
   --clr-line: #23272f;
-  --clr-line-button: #000;
+  --clr-line-button: #23272f;
   --md-sys-color-surface: rgb(23 27 35);
 }
 
 :root.light {
-  --clr-bg-1: #000;
+  --clr-bg-1: #23272f;
   --clr-line: #fff;
-  --clr-active: #34cdef;
-  --clr-line-button: #000;
-  --md-sys-color-surface: #f5f2f2;
+  --clr-active: #0a7ea5;
+  --clr-line-button: #23272f;
+  --md-sys-color-surface: #e5f7ff;
 }
 
 html,

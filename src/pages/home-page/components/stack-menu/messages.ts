@@ -1,4 +1,4 @@
 export const messages = {
-  randomButton: "Random project",
-  techStackButton: "Tech Stack",
+  certificateButton: 'Certificates',
+  techStackButton: 'Tech Stack',
 };

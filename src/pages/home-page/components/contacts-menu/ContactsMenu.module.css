@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 28px;
+  gap: 14px;
   width: 50%;
 }
 
@@ -21,13 +21,6 @@
   font-weight: 200;
   font-size: 30px;
   line-height: 42px;
-  text-align: center;
-}
-
-.description {
-  font-weight: 100;
-  font-size: 18px;
-  line-height: 30px;
   text-align: center;
 }
 

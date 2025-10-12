@@ -1,6 +1,6 @@
-import styles from "./git-hub-title.module.css";
-import { messages } from "./messages";
-import type { UserData } from "../../types";
+import styles from './git-hub-title.module.css';
+import { messages } from './messages';
+import type { UserData } from '../../types';
 
 interface Props {
   user: UserData | null;
@@ -15,6 +15,7 @@ export const GitHubTitle = ({ user }: Props) => {
           {user.login}
         </p>
       )}
+
       <p>{messages.gitHubUrlTitle}</p>
       {user && (
         <a href={user.html_url} target="_blank" className={styles.link}>

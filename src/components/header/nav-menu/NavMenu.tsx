@@ -30,7 +30,7 @@ export const NavMenu = () => {
     if (currentLink) {
       setSelectedLink(currentLink.label);
       document.title = currentLink.label;
-    } else if (location.pathname === PagePath.deploysPage) {
+    } else if (location.pathname === PagePath.portfolioPage) {
       setSelectedLink(messages.portfolioButton);
       document.title = messages.portfolioButton;
     }
@@ -42,7 +42,7 @@ export const NavMenu = () => {
   };
 
   const toPortfolio = (label: string) => {
-    void navigate(PagePath.deploysPage);
+    void navigate(PagePath.portfolioPage);
     setSelectedLink(label);
     document.title = label;
   };
@@ -53,6 +53,7 @@ export const NavMenu = () => {
       <Button className={styles.burgerMenu} onClick={toggleMenu}>
         <img src={burgerImg} alt="Burger Menu" width={24} height={24} />
       </Button>
+
       <nav
         className={classNames(styles.menu, {
           [styles.open]: isMobile && isMenuOpen,
@@ -73,13 +74,10 @@ export const NavMenu = () => {
             </NavLink>
           );
         })}
+
         <Button
           isActive={selectedLink === messages.portfolioButton}
           onClick={() => toPortfolio(messages.portfolioButton)}
-          className={classNames(
-            styles.button,
-            selectedLink ? styles.selectedButton : ''
-          )}
         >
           {messages.portfolioButton}
         </Button>

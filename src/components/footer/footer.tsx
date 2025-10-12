@@ -16,6 +16,7 @@ export const Footer = () => {
 
         <div className={styles.bottomContainer}>
           <p className={styles.bottomTitle}>{messages.bottomTitle}</p>
+
           <SocialIcons />
         </div>
       </Wrapper>

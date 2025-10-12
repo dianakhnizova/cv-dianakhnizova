@@ -15,11 +15,11 @@
   display: none;
   justify-content: center;
   width: 100%;
+  padding: 0 0 20px;
 }
 
 .shrink {
-  width: 100%;
-  transform: scale(0.9) translateY(20px);
+  width: 95%;
 
   .previewContainer {
     display: flex;
@@ -47,4 +47,11 @@
   font-weight: 100;
   line-height: 30px;
   text-align: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--clr-bg-1);
 }

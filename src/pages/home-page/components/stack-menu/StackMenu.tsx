@@ -1,26 +1,28 @@
 import { messages } from './messages';
 import styles from './StackMenu.module.css';
 import { Button } from '@/components/button/Button';
-import { RandomProject } from '@/components/random-projects/RandomProjects';
-import { TechStack } from './components/tech-stack/tech-stack';
 import type { JSX } from 'react';
 import { useState } from 'react';
+import { TechStack } from './components/tech-stack/TechStack';
+import { Certificates } from '@/components/certificates/Certificates';
 
 export const StackMenu = () => {
-  const randomBlock = <RandomProject />;
+  const certificatesBlock = <Certificates />;
   const techStackBlock = <TechStack />;
 
   const [stackContent, setStackContent] = useState<JSX.Element | null>(null);
   const [activeButton, setActiveButton] = useState<
-    'random' | 'tech-stack' | null
+    'certificates' | 'tech-stack' | null
   >(null);
 
-  const toggleStackContent = (type: 'random' | 'tech-stack' | null) => {
+  const toggleStackContent = (type: 'certificates' | 'tech-stack' | null) => {
     if (activeButton === type) {
       setStackContent(null);
       setActiveButton(null);
     } else {
-      setStackContent(type === 'random' ? randomBlock : techStackBlock);
+      setStackContent(
+        type === 'certificates' ? certificatesBlock : techStackBlock
+      );
       setActiveButton(type);
     }
   };
@@ -29,11 +31,11 @@ export const StackMenu = () => {
     <div className={styles.container}>
       <div className={styles.buttonContainer}>
         <Button
-          isActive={activeButton === 'random'}
-          onClick={() => toggleStackContent('random')}
+          isActive={activeButton === 'certificates'}
+          onClick={() => toggleStackContent('certificates')}
           className={styles.stackButton}
         >
-          {messages.randomButton}
+          {messages.certificateButton}
         </Button>
 
         <Button
@@ -45,7 +47,9 @@ export const StackMenu = () => {
         </Button>
       </div>
 
-      <div className={styles.stackContainer}>{stackContent}</div>
+      {stackContent && (
+        <div className={styles.stackContainer}>{stackContent}</div>
+      )}
     </div>
   );
 };

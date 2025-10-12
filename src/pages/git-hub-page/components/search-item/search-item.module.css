@@ -3,15 +3,23 @@
   align-items: center;
   width: 60%;
   gap: 20px;
-  padding: 20px 0;
+  border-radius: 20px;
+  box-shadow: var(--elevation-level3);
+  background-color: var(--md-sys-color-surface);
+  padding: 20px;
 }
 
 .input {
-  box-shadow: var(--shadow-6);
-  background: transparent;
+  background-color: var(--clr-line);
+  border: 1px solid transparent;
+  border-radius: 20px;
   color: var(--clr-bg-1);
-  padding: 8px 24px;
-  width: 26%;
+  padding: 10px;
+  width: 70%;
+
+  &:focus {
+    border: 1px solid var(--clr-active);
+  }
 }
 
 @media (width <= 600px) {

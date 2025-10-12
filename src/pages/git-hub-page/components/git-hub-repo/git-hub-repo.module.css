@@ -3,14 +3,21 @@
   flex-direction: column;
   gap: 10px;
   list-style: none;
-  box-shadow: var(--shadow-5);
-  padding: 20px;
   width: 60%;
+  border-radius: 20px;
+  box-shadow: var(--elevation-level3);
+  background-color: var(--md-sys-color-surface);
+  padding: 20px;
 }
 
 .link {
   text-decoration: none;
   color: var(--clr-bg-1);
+  font-size: 14px;
+
+  &:hover {
+    color: var(--clr-active);
+  }
 }
 
 @media (width <= 600px) {

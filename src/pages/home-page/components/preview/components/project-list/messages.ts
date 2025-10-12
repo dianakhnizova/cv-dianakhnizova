@@ -32,4 +32,10 @@ export const messages = {
     climate: Climate,
     library: Library,
   },
+
+  link: {
+    rest: 'https://github.com/dianakhnizova/final-task-rest/pull/11',
+    climate: 'https://github.com/dianakhnizova/rs-react/pull/8',
+    library: 'https://your-library-dianakhnizova.netlify.app/',
+  },
 };

@@ -28,5 +28,6 @@ export type Project = {
   description: string;
   language: Languages[];
   image: string;
+  link: string;
 };
 export type ThemeType = Theme.Dark | Theme.Light;

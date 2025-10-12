@@ -7,7 +7,8 @@
   padding: 40px 0;
 }
 
-.buttonContainer {
+.buttonContainer,
+.stackContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,13 +24,6 @@
   display: flex;
   align-items: center;
   gap: 6px;
-}
-
-.stackContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
 }
 
 @media (width <= 800px) {

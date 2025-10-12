@@ -16,8 +16,13 @@ export const SearchItem = ({ searchRepo, setRepos, setSearchRepo }: Props) => {
     setSearchRepo(value);
   };
 
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    await fetchUserRepos(setRepos, searchRepo);
+  };
+
   return (
-    <div className={styles.searchContainer}>
+    <form className={styles.searchContainer} onSubmit={handleSubmit}>
       <input
         value={searchRepo}
         onChange={handleSearchInput}
@@ -26,13 +31,7 @@ export const SearchItem = ({ searchRepo, setRepos, setSearchRepo }: Props) => {
         className={styles.input}
       />
 
-      <Button
-        onClick={() => {
-          void fetchUserRepos(setRepos, searchRepo);
-        }}
-      >
-        {messages.findButton}
-      </Button>
-    </div>
+      <Button type="submit">{messages.findButton}</Button>
+    </form>
   );
 };
