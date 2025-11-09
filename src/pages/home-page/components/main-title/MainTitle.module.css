@@ -32,7 +32,11 @@
 }
 
 @media (width <= 600px) {
+  .titleName {
+    font-size: 14px;
+  }
+
   .titleProf {
-    font-size: 10px;
+    font-size: 8px;
   }
 }

@@ -10,6 +10,7 @@
   line-height: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: var(--clr-active);
 }
 
 .pagesLinks {
@@ -24,8 +25,8 @@
   font-weight: 100;
   font-size: 13px;
   line-height: 20px;
-}
 
-.pageItem:hover {
-  transform: scale(1.15);
+  &:hover {
+    color: var(--clr-active);
+  }
 }

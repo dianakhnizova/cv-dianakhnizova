@@ -1,5 +1,5 @@
 import styles from './Logo.module.css';
-import LogoIcon from '@/assets/logo.jpg';
+import LogoIcon from '@/assets/logo.svg';
 
 export const Logo = () => {
   return (

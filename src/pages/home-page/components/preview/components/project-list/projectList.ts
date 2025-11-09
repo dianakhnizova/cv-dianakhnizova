@@ -36,4 +36,14 @@ export const projectList: Project[] = [
     image: messages.image.climate,
     link: messages.link.climate,
   },
+  {
+    title: messages.title.async,
+    description: messages.description.async,
+    language: [
+      { title: messages.language.ts },
+      { title: messages.language.css },
+    ],
+    image: messages.image.async,
+    link: messages.link.async,
+  },
 ];

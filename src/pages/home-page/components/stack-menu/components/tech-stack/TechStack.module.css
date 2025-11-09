@@ -12,6 +12,7 @@
 .stackContainer {
   display: flex;
   justify-content: center;
+  width: 100%;
   gap: 20px;
 }
 
@@ -26,7 +27,12 @@
 }
 
 @media (width <= 600px) {
-  .container {
-    padding: 80px;
+  .stackContainer {
+    gap: 10px;
+  }
+
+  .image {
+    width: 20px;
+    height: 20px;
   }
 }
